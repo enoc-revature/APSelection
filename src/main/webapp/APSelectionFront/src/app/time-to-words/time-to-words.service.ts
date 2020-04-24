@@ -16,10 +16,14 @@ export class TimeToWordsService {
   };
 
   obj = {
-    h: "",
-    m: ""
+    h: 0,
+    m: 0
   };
+
   getWords(obj: Object): Observable <string> {
+    this.obj.h = parseInt(document.getElementById("hourId").innerHTML);
+    this.obj.m = parseInt(document.getElementById("minuteId").innerHTML);
+    //this.obj.m = document.getElementById("minuteId").innerHTML;
     return this.http.post<string>(this.url, obj);
   }
 }

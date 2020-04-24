@@ -2,11 +2,16 @@ package com.revature.apselection.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "events")
 public class Event {
+	@Id
+	@Column(name = "eventId")
+	private String eventId;
+
 	@Column(name = "eventName")
 	private String eventName;
 
