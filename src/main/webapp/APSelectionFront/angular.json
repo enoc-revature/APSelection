@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "APSelectionFront"
+    }
+  },
+  "defaultProject": "APSelectionFront",
+  "cli": {
+    "analytics": "fff49739-3b8f-4866-9d2a-bd86df09c6bf"
+  }
 }

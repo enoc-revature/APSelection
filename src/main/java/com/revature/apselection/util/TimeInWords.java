@@ -2,7 +2,7 @@ package com.revature.apselection.util;
 
 public class TimeInWords {
 
-    static String timeInWords(int h, int m) {
+    static public String timeInWords(int h, int m) {
         // Variables and mappings
         String fullPhrase;
         String[] phrases = {" o' clock", " minute past ", " minutes past ", " minutes to ", " minute to "};
