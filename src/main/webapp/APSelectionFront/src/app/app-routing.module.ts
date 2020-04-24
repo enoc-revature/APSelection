@@ -10,7 +10,7 @@ import { MenuPageComponent } from './menu-page/menu-page.component';
 const routes: Routes = [
   { path: 'time-to-words', component: TimeToWordsComponent },
   { path: 'create-event', component: CreateEventComponent },
-  { path: 'time-to-words', component: GetAllEventsComponent },
+  { path: 'get-all-events', component: GetAllEventsComponent },
   { path: '', component: MenuPageComponent }
 ];
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TimeToWordsService } from './time-to-words.service';
 
 @Component({
   selector: 'app-time-to-words',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimeToWordsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ttws: TimeToWordsService) { }
 
   ngOnInit(): void {
   }
 
+  words: string;
+
+  submit(): void {
+    this.ttws.getWords(this.ttws.obj).subscribe(words => {this.words = words;})
+  }
 }
